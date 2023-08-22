@@ -41,8 +41,8 @@ defdict = {"A": 1,
            "Z": 25
             }
 #main functions
-def Defaultdict():
-    fp = open('Dictionaries/Dictionary1.pkl', 'wb')
+def Defaultdictsave():
+    fp = open('D:\codw\python\crypt\Crypt\Dictionaries\defDictionary.pkl', 'wb')
     pickle.dump(defdict, fp)
 def Load_dict():
     fp = open('Dictionaries/person_data.pkl', 'rb')
@@ -85,7 +85,6 @@ def Start():
         print("please re enter")
         Start()
 #encrypt()
-file = open('defaultdict', 'wb')
-pickle.dump(defdict,file)
+Defaultdictsave()
 time.sleep(3)
 #Start()

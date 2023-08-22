@@ -84,7 +84,7 @@ def Start():
 
         print("please re enter")
         Start()
-#encrypt()
-Defaultdictsave()
+encrypt()
+
 time.sleep(3)
 #Start()

@@ -1,4 +1,7 @@
-import pickle , time, os, random
+import pickle 
+import time
+import os
+import random
 import tkinter as tk
 from tkinter import filedialog
 
@@ -38,7 +41,8 @@ defdict = {"A": 1,
            "W": 22,
            "X": 23,
            "Y": 24,
-           "Z": 25
+           "Z": 25,
+           " ": 26
             }
 #main functions
 def Defaultdictsave():
@@ -46,14 +50,19 @@ def Defaultdictsave():
     pickle.dump(defdict, fp)
 def Load_dict():
     fp = open('Dictionaries/person_data.pkl', 'rb')
-    print(pickle.load(fp)["A","B","C"])
+    print(pickle.load(fp)["A","B","C"," "])
 def encrypt():
     print("What dictonary do you wanna use?")
     #root = tk.Tk()
     #root.withdraw()
-    #fp = filedialog.askopenfilename()
+    #fp = open(filedialog.askopenfilename(), 'rb')
+ 
     msg = input("what do you want to encrypt: ")
-    print(pickle.load(fp)[msg])
+
+    
+    print(len(msg))
+    #print(pickle.load(fp)[msg])
+
 def Genr():
     print(defdict["A"])
     
@@ -84,7 +93,7 @@ def Start():
 
         print("please re enter")
         Start()
-encrypt()
-
+#encrypt()
+Defaultdictsave()
 time.sleep(3)
 #Start()

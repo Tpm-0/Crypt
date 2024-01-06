@@ -1,5 +1,5 @@
 # Crypt
-Purely for experimental purposes and any code produced is free for anyone to use
+Purely for experimental purposes only! And any code produced is free for anyone to use, replicate, profit, ect
 work in progress 
 
 
